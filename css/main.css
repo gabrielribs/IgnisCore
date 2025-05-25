@@ -1,0 +1,200 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-size: 20px;
+  font-family: "Lilita One", sans-serif;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: rgb(221, 231, 239);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #141414;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo span {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.logo img {
+  height: 60px;
+  margin-left: 20px;
+}
+
+.nav-links {
+  display: flex;
+  margin: 0 160px;
+  gap: 50px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.banner {
+  width: 100%;
+  height: 600px;
+  background: url('/images/banner.jpeg') center/cover no-repeat;
+  display: flex;
+  justify-content: end;
+  align-items: start;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+#banner-text {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+  padding: 90px 70px;
+}
+
+#titulo{
+  padding: 40px 0;
+  text-align: center;
+}
+
+.container {
+  height: 250px;
+  width: 60%;
+  margin: 10px auto 40px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+  padding: 50px 0;
+}
+
+.item {
+  width: 60%;
+  flex: 1;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 0 20px;
+}
+
+.item img {
+  height: 150px;
+  border-radius: 8px;
+  position: relative;
+  top: -60px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.item p {
+  position: relative;
+  top: -50px;
+  font-size: 15px;
+  color: #333;
+}
+
+.faixa {
+  height: 100px;
+  background-color: #141414;
+}
+
+.contato {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 80px;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.contato::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/images/contatos.jpeg') center/cover no-repeat;
+  filter: grayscale(100%) opacity(20%) blur(2px);
+  z-index: -1;
+}
+
+.esquerda {
+  height: 160px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(202, 209, 214);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.esquerda img {
+  height: 280px;
+  position: relative;
+  top: -70px;
+  left: 10px;
+  transform: scaleX(-1);
+}
+
+.direita {
+  width: 300px;
+}
+
+.form-container {
+  width: 300px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form-container input,
+.form-container button {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 10px;
+  outline: none;
+}
+
+.form-container button {
+  width: 100px;
+  background-color: #000000;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+.form-container button:hover {
+  background-color: #1a1a1a;
+}
+
+footer {
+  padding: 20px;
+  background-color: #141414;
+  color: white;
+  text-align: center;
+  font-size: 10px;
+}
